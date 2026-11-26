@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trip Kit Case Study | Stephanie OCampo</title>
+<meta name="description" content="Trip Kit, a 2021 product design case study about finding essential travel information and making access to personal documents deliberate.">
+<meta name="theme-color" content="#faf9f6"><link rel="icon" href="data:,"><link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="trip-kit.css">
+</head>
+<body class="trip-kit">
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap masthead">
+<a class="brand" href="../" aria-label="Stephanie OCampo, home"><span class="mark" aria-hidden="true">S.</span><span><strong>Stephanie OCampo</strong><small>Product Designer</small></span></a>
+<nav aria-label="Main"><a href="../#work">Work</a><a href="../#approach">Approach</a></nav>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap casehead">
+<p class="kicker signal">Selected work / 02</p>
+<h1>Trip Kit</h1>
+<p class="subtitle">Find what matters. When it matters.</p>
+<p class="lead">Making essential travel information easier to navigate during pandemic-era uncertainty, with intentional access to personal documents.</p>
+<p class="trip-meta"><strong>Role:</strong> Independent product designer <span aria-hidden="true">·</span> <strong>Scope:</strong> Research, interaction design, and prototyping <span aria-hidden="true">·</span> <strong>Project:</strong> 2021 mobile prototype</p>
+</div>
+<section class="wrap primer" aria-labelledby="summary">
+<p class="kicker">Case study summary</p>
+<h2 id="summary">Quick access, with a clear boundary</h2>
+<div class="primer-grid">
+<div><h3>Problem</h3><p>Itineraries and changing travel requirements were scattered across tools.</p></div>
+<div><h3>Design choice</h3><p>Use the trip as the starting point and make access to personal documents a distinct Wallet interaction.</p></div>
+<div><h3>Evidence</h3><p>Discovery interviews, competitive analysis, and reported feedback on a mobile prototype.</p></div>
+</div>
+</section>
+<div class="wrap case-layout">
+<nav class="toc" aria-label="Case study sections"><p class="kicker">In this case study</p><ol>
+<li><a href="#overview">Overview and challenge</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#wallet">The key experience</a></li>
+<li><a href="#testing">Testing and refinement</a></li>
+<li><a href="#final-design">Final design</a></li>
+<li><a href="#reflection">Reflection</a></li>
+</ol></nav>
+<article class="story" aria-label="Trip Kit design process">
+<section id="overview" aria-labelledby="overview-title">
+<p class="kicker">01 / Overview and challenge</p>
+<h2 id="overview-title">Travel information was scattered. The stakes felt higher.</h2>
+<p>In 2021, travel planning meant managing reservations and itineraries alongside changing COVID-19 requirements. Interviews surfaced a practical problem: important information was scattered across email, apps, and websites, making it difficult to find at the moment it was needed. I explored a trip-centered mobile concept that could bring relevant resources together without treating sensitive documents like ordinary content.</p>
+<p class="insight"><strong>How might one trip-centered experience make essential resources easier to find while introducing a clear boundary around personal travel documents?</strong></p>
+<div class="trip-phones">
+<figure class="study-figure"><a href="trip-overview.webp" aria-label="View the full trip overview concept screen"><img src="trip-overview.webp" width="375" height="1094" alt="Blue-header Trip Kit overview with Favorites, Recents, and dated trip cards for Malibu, San Francisco, and Las Vegas." decoding="async"></a><figcaption>Trip overview</figcaption></figure>
+<figure class="study-figure"><a href="covid-resources.webp" aria-label="View the full COVID-19 resources concept screen"><img src="covid-resources.webp" width="310" height="620" alt="Red-header COVID-19 screen with a calendar, Favorites, Recents, and a list of travel health resources." decoding="async"></a><figcaption>COVID-19 resources</figcaption></figure>
+</div>
+</section>
+<section id="research" aria-labelledby="research-title">
+<p class="kicker">02 / Research</p>
+<h2 id="research-title">Travel planners and wallets answered different questions</h2>
+<p>I conducted five discovery interviews and reviewed a range of products. Travel planners such as KAYAK, TripIt, and Wanderlog highlighted patterns in trip organization and retrieval. Apple Wallet and Cash App offered a separate lens on presenting portable items. The research narrowed the problem from an all-in-one travel app toward clear navigation and access to key documents.</p>
+<h3>The needs that surfaced</h3>
+<ul class="trip-findings">
+<li><strong>Reduce the hunt.</strong> Travel details were buried in email and scattered across tools.</li>
+<li><strong>Keep the trip in view.</strong> The trip could provide a starting point for finding related resources.</li>
+<li><strong>Keep documents handy.</strong> Contactless access and offline availability came up as practical concerns.</li>
+</ul>
+</section>
+<section id="wallet" aria-labelledby="wallet-title">
+<p class="kicker">03 / The key experience</p>
+<h2 id="wallet-title">The Wallet needed a different kind of friction</h2>
+<p>For ordinary trip resources, quick access was the goal. Presenting a personal vaccination document warranted a deliberate step. I focused the task flow on opening a document from the selected trip while making the protected state visible.</p>
+<ol class="trip-steps">
+<li>Choose a trip</li><li>Open Wallet</li><li>Enter password</li><li>Present document</li><li>Exit to locked state</li>
+</ol>
+<figure class="study-figure"><a href="wallet-wireframes.webp" aria-label="View the full Wallet wireframes"><img src="wallet-wireframes.webp" width="1190" height="398" alt="Seven wireframes showing the route from trip selection to Wallet, a password prompt, the unlocked Wallet, and a sample vaccination-card screen." loading="lazy" decoding="async"></a><figcaption>Wallet wireframes: choose a trip, unlock Wallet, and open an example document.</figcaption></figure>
+<p>The password prompt and locked state were prototype interactions. They did not implement or verify authentication.</p>
+</section>
+<section id="testing" aria-labelledby="testing-title">
+<p class="kicker">04 / Testing and refinement</p>
+<h2 id="testing-title">Feedback made the navigation clearer</h2>
+<p>I tested the Wallet flow and used feedback from a comparison of two mid-fidelity versions to refine the design. Participants preferred the list layout and straightforward flow. Decorative icons were hard to recognize, and similar-looking screens were hard to tell apart.</p>
+<h3>What changed after testing</h3>
+<p>I kept the calendar context, Favorites and Recents, and a clear route through Wallet. I made icons and labels easier to recognize, differentiated screens, and gave lists a clearer hierarchy.</p>
+<details class="trip-proof"><summary>View the original A/B feedback summary</summary><figure class="study-figure"><a href="testing-notes.webp" aria-label="View the full A/B feedback summary"><img src="testing-notes.webp" width="1448" height="668" alt="A/B feedback notes: participants liked the calendar, list view, straightforward flow, and toggle locks; some icons were distracting and similar pages were difficult to distinguish." loading="lazy" decoding="async"></a><figcaption>Reported preferences from the prototype comparison.</figcaption></figure></details>
+</section>
+<section id="final-design" aria-labelledby="final-design-title">
+<p class="kicker">05 / Final design</p>
+<h2 id="final-design-title">Familiar navigation. Intentional document access.</h2>
+<p>The final prototype paired trip-specific navigation and recognizable lists with a deliberate path to a personal document. Calendar context, Favorites and Recents supported wayfinding; Wallet made access to sensitive content a distinct action.</p>
+<ul class="trip-findings">
+<li><strong>Start with the trip.</strong> A selected itinerary anchors related tools and travel information.</li>
+<li><strong>Make options readable.</strong> Dates, familiar labels, and list navigation help people orient themselves.</li>
+<li><strong>Signal the boundary.</strong> The Wallet prototype shows a password gate before the document.</li>
+</ul>
+</section>
+<section id="reflection" aria-labelledby="reflection-title">
+<p class="kicker">06 / Reflection</p>
+<h2 id="reflection-title">The right friction depends on the task</h2>
+<p>Trip Kit taught me to distinguish unnecessary friction from an intentional access step. Familiar navigation helps travelers find everyday information quickly; presenting a personal document is a different task and calls for a more deliberate interaction.</p>
+<p>Testing also showed how easily decorative icons and overly similar screens can undermine otherwise straightforward flows. The result was a more deliberate prototype and a clearer understanding of which design choices deserved to stay.</p>
+<p class="insight"><strong>What I would test next:</strong> The Wallet journey under airport time pressure, with limited connectivity and different accessibility needs. Before release, I'd also validate the security and verification requirements.</p>
+</section>
+<a class="backlink" href="../#work">← Back to selected work</a>
+</article>
+</div>
+</main>
+<footer class="wrap sitefoot"><span>Stephanie OCampo <span class="dim">/ Product Designer</span></span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
