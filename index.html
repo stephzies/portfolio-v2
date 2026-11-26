@@ -8,26 +8,33 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='24' fill='%23171923'/%3E%3Ctext x='12' y='33' fill='white' font-family='system-ui' font-size='26' font-weight='700'%3ES.%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="hero-update.css">
 <script src="home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="wrap masthead">
   <a class="brand" href="./" aria-label="Stephanie OCampo, home"><span class="mark" aria-hidden="true">S.</span><span><strong>Stephanie OCampo</strong><small>Product Designer</small></span></a>
-  <nav aria-label="Main"><a href="#work">Work</a><a href="#approach">About me</a></nav>
+  <nav aria-label="Main"><a href="#work">Work</a><a href="#approach">About</a></nav>
 </header>
 <main id="main" tabindex="-1">
-  <section id="approach" class="wrap hero" aria-labelledby="hero-title">
-    <div>
-      <p class="kicker signal">Stephanie OCampo / Product Designer</p>
+  <section id="approach" class="wrap hero editorial-hero" aria-labelledby="hero-title">
+    <div class="hero-intro">
+      <p class="kicker signal">Stephanie · Product Designer</p>
       <h1 id="hero-title">Design that <span class="under">thinks ahead,</span> so users <em>don't have to.</em></h1>
-      <p class="lead">I spent <strong>16 years at USAA in insurance and member service</strong> before moving into product design. I bring that perspective to my work: I look for where people get stuck, then make the information and next steps easier to find. I use AI to prototype quickly and rely on firsthand use and feedback to decide what to keep.</p>
-      <a class="button" href="#work">See the work <span aria-hidden="true">↘</span></a>
+      <div class="hero-description">
+        <p>Before I designed digital experiences, I spent years listening to people talk about them. That perspective shaped how I think about products now: intuitive, thoughtful, and built around what people actually need to do.</p>
+        <p>I design experiences that make complexity feel clear, connected, and easy to move through.</p>
+      </div>
+      <a class="button" href="#work">View Selected Work <span aria-hidden="true">↘</span></a>
     </div>
-    <aside class="pullquote">
-      <span class="quotemark" aria-hidden="true">“</span>
-      <blockquote>The best interfaces <em>just make sense.</em></blockquote>
-      <p class="kicker">A philosophy of useful connections</p>
+    <aside class="hero-aside" aria-label="Portrait and design philosophy">
+      <figure class="portrait-unit">
+        <div class="portrait-frame">
+          <img src="assets/stephanie-avatar.webp" width="800" height="800" alt="Illustrated portrait of Stephanie OCampo" fetchpriority="high" decoding="async">
+        </div>
+      </figure>
+      <blockquote class="hero-philosophy">The best interfaces <em>just make sense.</em></blockquote>
     </aside>
   </section>
   <section id="work" class="work" aria-labelledby="work-heading">
