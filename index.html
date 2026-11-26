@@ -11,6 +11,13 @@
 <link rel="stylesheet" href="hero-portrait.css">
 <link rel="stylesheet" href="project-covers.css">
 <script src="home.js" defer></script>
+<style>
+.about-me-copy{display:grid;gap:1.05rem;max-width:60ch;color:var(--ink);font-size:clamp(1rem,.96rem + .2vw,1.125rem);line-height:1.75}
+.about-me-copy p:first-child{font-weight:600}
+.about-me-photo{margin-top:1.5rem;max-width:25rem}
+.about-me-photo img{height:auto;border:1px solid var(--stroke);border-radius:.75rem}
+@media(max-width:760px){.about-me-photo{margin-top:1rem;max-width:22rem}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -19,7 +26,7 @@
   <nav aria-label="Main"><a href="#work">Work</a><a href="#approach">About</a></nav>
 </header>
 <main id="main" tabindex="-1">
-  <section id="approach" class="wrap hero editorial-hero" aria-labelledby="hero-title">
+  <section class="wrap hero editorial-hero" aria-labelledby="hero-title">
     <div class="hero-intro">
       <p class="kicker signal">Stephanie · Product Designer</p>
       <h1 id="hero-title">Design that <span class="under">thinks ahead,</span> so users <em>don't have to.</em></h1>
@@ -80,6 +87,22 @@
         </a>
       </article>
       </div>
+    </div>
+  </section>
+  <section id="approach" class="wrap approach about-me" aria-labelledby="about-heading">
+    <div>
+      <p class="kicker signal">About</p>
+      <h2 id="about-heading">A little about me</h2>
+      <figure class="about-me-photo">
+        <img src="assets/stephanie-about-portrait.webp" width="1000" height="1000" alt="Stephanie smiling beside her dog Katie Cupcake, who is wearing a pink bandana" loading="lazy" decoding="async">
+      </figure>
+    </div>
+    <div class="about-me-copy">
+      <p>I'm Stephanie, a Product Designer with a background that started on the other side of the user experience.</p>
+      <p>I spent 16 years at USAA helping people navigate complex situations, listening to their frustrations, and learning how much clarity and thoughtful communication matter. That experience still shapes the way I approach design today.</p>
+      <p>I'm naturally curious, persistent, and a little obsessed with figuring out how things work. I enjoy untangling complicated problems, questioning assumptions, and turning messy ideas into experiences that feel simple and intuitive.</p>
+      <p>As an independent designer, I've learned to be resourceful, take ownership, and keep pushing until the details make sense. I'm especially excited about how AI is changing what designers can explore, build, and bring to life.</p>
+      <p>When I'm not designing for others, I'm usually dreaming up apps to solve my own everyday frustrations, tackling a home renovation project, or disappearing down a rabbit hole about whatever has caught my interest. I also love a good book, a challenging puzzle, and spending time with my 14-year-old pup Katie Cupcake.</p>
     </div>
   </section>
 </main>
