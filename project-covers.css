@@ -1,0 +1,33 @@
+.project-art.cover{position:relative;display:block;aspect-ratio:1.78;min-height:9.5rem;isolation:isolate}
+.cover--startzie{background:radial-gradient(ellipse at 70% 15%,#efe7fc 0,transparent 53%),linear-gradient(137deg,#dcd0ef,#bca7d8)}
+.cover--trip{background:radial-gradient(ellipse at 67% 10%,#f2fafb 0,transparent 52%),linear-gradient(145deg,#caddf0,#9dc9d2)}
+.cover--xrayux{background:radial-gradient(ellipse at 75% 0%,#fff4f2 0,transparent 61%),linear-gradient(150deg,#ead0e0,#d4a8c6)}
+.cover-chrome,.cover-handset{position:absolute;box-shadow:0 .65rem 1.25rem #27204346;transition:transform 260ms cubic-bezier(.2,.75,.25,1),box-shadow 220ms ease}
+.cover-chrome{top:13%;width:86%;left:7%;overflow:hidden;background:#fbf8fd;border:1px solid #ffffffa0;border-radius:.55rem;transform:translateY(0) rotate(-3deg)}
+.cover-chrome img{width:100%;height:auto}
+.cover-toolbar{height:.83rem;display:flex;align-items:center;gap:.19rem;padding-left:.47rem;background:#f1e9f8;border-bottom:1px solid #ded0e8}
+.cover-toolbar i{width:.22rem;height:.22rem;border-radius:50%;background:#8e74a2}
+.cover--xrayux .cover-chrome{width:90%;left:5%;top:19%;transform:rotate(3deg)}
+.cover--xrayux .cover-toolbar{background:#fcf0f6;border-color:#ecdce7}
+.cover--xrayux .cover-toolbar i{background:#a76b8a}
+.cover-handset{overflow:hidden;border:1px solid #1b3444a0;border-radius:.62rem;background:#162533;transform-origin:center}
+.cover-handset img{width:100%;height:auto}
+.cover-handset--trip{left:20%;top:8%;width:30%;transform:rotate(-8deg)}
+.cover-handset--resources{left:51%;top:19%;width:31%;transform:rotate(8deg)}
+.project-link:focus-visible .cover-chrome,.project-link[data-selected="true"] .cover-chrome{transform:translateY(-.14rem) rotate(0)}
+.project-link:focus-visible .cover-handset--trip,.project-link[data-selected="true"] .cover-handset--trip{transform:translateY(-.2rem) rotate(-5deg)}
+.project-link:focus-visible .cover-handset--resources,.project-link[data-selected="true"] .cover-handset--resources{transform:translateY(-.2rem) rotate(5deg)}
+@media(hover:hover){
+ .project-link:hover .cover-chrome{transform:translateY(-.18rem) rotate(0)}
+ .project-link:hover .cover-handset--trip{transform:translateY(-.25rem) rotate(-5deg)}
+ .project-link:hover .cover-handset--resources{transform:translateY(-.18rem) rotate(5deg)}
+}
+@media(min-width:441px) and (max-width:760px){
+ .project-art.cover{aspect-ratio:auto}
+ .cover-chrome,.cover--xrayux .cover-chrome{top:22%}
+ .cover-handset--trip,.cover-handset--resources{width:36%;top:23%}
+ .cover-handset--trip{left:15%}.cover-handset--resources{left:48%;top:29%}
+}
+@media(prefers-reduced-motion:reduce){
+ .project-link .cover-chrome,.project-link .cover-handset{transition:none!important;transform:none!important}
+}
