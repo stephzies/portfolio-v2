@@ -7,19 +7,21 @@
 <meta name="theme-color" content="#faf9f6">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='24' fill='%23171923'/%3E%3Ctext x='12' y='33' fill='white' font-family='system-ui' font-size='26' font-weight='700'%3ES.%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="home.css">
+<script src="home.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="wrap masthead">
   <a class="brand" href="./" aria-label="Stephanie OCampo, home"><span class="mark" aria-hidden="true">S.</span><span><strong>Stephanie OCampo</strong><small>Product Designer</small></span></a>
-  <nav aria-label="Main"><a href="#work">Work</a><a href="#approach">Approach</a></nav>
+  <nav aria-label="Main"><a href="#work">Work</a><a href="#approach">About me</a></nav>
 </header>
 <main id="main" tabindex="-1">
-  <section class="wrap hero" aria-labelledby="hero-title">
+  <section id="approach" class="wrap hero" aria-labelledby="hero-title">
     <div>
-      <p class="kicker signal">Product Design Portfolio</p>
+      <p class="kicker signal">Stephanie OCampo / Product Designer</p>
       <h1 id="hero-title">Design that <span class="under">thinks ahead,</span> so users <em>don't have to.</em></h1>
-      <p class="lead">I design experiences where <strong>the right information is where you expect it</strong> and what you need next is already within reach. Less searching, less second-guessing, more room to focus on what matters.</p>
+      <p class="lead">I spent <strong>16 years at USAA in insurance and member service</strong> before moving into product design. I bring that perspective to my work: I look for where people get stuck, then make the information and next steps easier to find. I use AI to prototype quickly and rely on firsthand use and feedback to decide what to keep.</p>
       <a class="button" href="#work">See the work <span aria-hidden="true">↘</span></a>
     </div>
     <aside class="pullquote">
@@ -28,31 +30,51 @@
       <p class="kicker">A philosophy of useful connections</p>
     </aside>
   </section>
-  <section id="work" class="work" aria-label="Selected work">
+  <section id="work" class="work" aria-labelledby="work-heading">
     <div class="wrap">
-      <p class="kicker rule">01 <span>Selected work</span></p>
-      <div class="work-grid">
-        <div><h2 id="work-title">Startzie<span aria-hidden="true">.</span></h2><p class="kicker">Independent Product Design</p></div>
-        <div><p class="feature">Startzie is a personal planning application shaped through everyday use. I refined its views and interactions around a simple principle: make what matters easy to see and keep everything else within reach.</p>
-        <a class="textlink" href="startzie/">Read the Startzie case study <span aria-hidden="true">↗</span></a></div>
-      </div>
-      <div class="work-grid portfolio-next" aria-labelledby="trip-kit-work-title">
-        <div><h2 id="trip-kit-work-title">Trip Kit<span aria-hidden="true">.</span></h2><p class="kicker">Independent UX Design · 2021</p></div>
-        <div><p class="feature">A travel planning prototype that brings trip resources into view and gives personal documents a deliberate path through a Wallet.</p>
-        <a class="textlink" href="trip-kit/">Read the Trip Kit case study <span aria-hidden="true">↗</span></a></div>
-      </div>
-      <div class="work-grid portfolio-next">
-        <div><h2 id="xrayux-work-title">XRayUX<span aria-hidden="true">.</span></h2><p class="kicker">Service Design · 2025</p></div>
-        <div><p class="feature">A website-audit concept evolved into hands-on digital support. I redesigned the offer around changes small-business owners could actually make.</p>
-        <a class="textlink" href="xrayux/">Read the XRayUX case study <span aria-hidden="true">↗</span></a></div>
+      <p class="kicker rule">01 <span>Portfolio</span></p>
+      <h2 id="work-heading" class="project-heading">Selected work</h2>
+      <div class="project-grid">
+      <article class="project project--startzie">
+        <a class="project-link" href="startzie/" data-project="startzie" aria-labelledby="project-startzie-title">
+          <div class="project-art" aria-hidden="true"><svg viewBox="0 0 240 110" fill="none" focusable="false"><rect x="22" y="14" width="196" height="82" rx="11" fill="var(--art-canvas)" stroke="currentColor" stroke-width="1.5"/><path d="M76 14v82M22 34h196" stroke="currentColor" stroke-width="1.5"/><rect x="34" y="45" width="29" height="7" rx="3" fill="currentColor" opacity=".25"/><rect x="34" y="60" width="29" height="7" rx="3" fill="currentColor" opacity=".42"/><rect x="34" y="75" width="20" height="7" rx="3" fill="currentColor" opacity=".25"/><rect x="88" y="46" width="56" height="37" rx="6" fill="currentColor" opacity=".2"/><rect class="card-art-detail" x="152" y="46" width="52" height="15" rx="4" fill="currentColor" opacity=".5"/><rect x="152" y="69" width="52" height="14" rx="4" fill="currentColor" opacity=".2"/></svg></div>
+          <div class="project-copy">
+            <p class="kicker"><span aria-hidden="true">01 / </span>Product design</p>
+            <h3 id="project-startzie-title">Startzie</h3>
+            <p class="project-pitch">Turn a bigger picture into a plan for today.</p>
+            <p class="project-description">A personal planning app refined through daily use, with distinct spaces to get oriented, organize work, and act.</p>
+            <span class="project-cta" aria-hidden="true">Read case study <span>↗</span></span>
+          </div>
+        </a>
+      </article>
+      <article class="project project--trip-kit">
+        <a class="project-link" href="trip-kit/" data-project="trip-kit" aria-labelledby="project-trip-kit-title">
+          <div class="project-art" aria-hidden="true"><svg viewBox="0 0 240 110" fill="none" focusable="false"><path d="M18 88c31 0 32-67 76-67s48 56 82 56c16 0 28-8 43-20" stroke="currentColor" stroke-width="2" stroke-dasharray="4 5" opacity=".7"/><circle cx="23" cy="88" r="6" fill="currentColor"/><circle cx="218" cy="57" r="6" fill="currentColor"/><g class="card-art-detail"><rect x="72" y="36" width="100" height="56" rx="9" fill="var(--art-canvas)" stroke="currentColor" stroke-width="1.5"/><path d="M72 51h100M145 54v27" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4"/><path d="M85 66h43m-43 10h28" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".58"/><path d="M152 68h13" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></g></svg></div>
+          <div class="project-copy">
+            <p class="kicker"><span aria-hidden="true">02 / </span>Mobile UX · 2021</p>
+            <h3 id="project-trip-kit-title">Trip Kit</h3>
+            <p class="project-pitch">Find essential travel details when they matter.</p>
+            <p class="project-description">A mobile prototype that puts trip information within reach and makes access to personal documents deliberate.</p>
+            <span class="project-cta" aria-hidden="true">Read case study <span>↗</span></span>
+          </div>
+        </a>
+      </article>
+      <article class="project project--xrayux">
+        <a class="project-link" href="xrayux/" data-project="xrayux" aria-labelledby="project-xrayux-title">
+          <div class="project-art" aria-hidden="true"><svg viewBox="0 0 240 110" fill="none" focusable="false"><rect x="35" y="27" width="61" height="65" rx="9" fill="var(--art-canvas)" stroke="currentColor" stroke-width="1.5"/><path d="M47 48h36M47 59h25m-25 11h31" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".55"/><path d="M105 60h24m-7-7 7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="139" y="19" width="72" height="65" rx="9" fill="var(--art-canvas)" stroke="currentColor" stroke-width="1.5"/><path d="M139 34h72" stroke="currentColor" stroke-width="1.5"/><rect class="card-art-detail" x="150" y="45" width="25" height="27" rx="4" fill="currentColor" opacity=".52"/><path d="M183 50h17m-17 8h13m-13 8h15" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".6"/></svg></div>
+          <div class="project-copy">
+            <p class="kicker"><span aria-hidden="true">03 / </span>Service design · 2025</p>
+            <h3 id="project-xrayux-title">XRayUX</h3>
+            <p class="project-pitch">Give small-business owners a way to act.</p>
+            <p class="project-description">A website-audit concept redesigned around hands-on digital support and a clearer way to scope the work.</p>
+            <span class="project-cta" aria-hidden="true">Read case study <span>↗</span></span>
+          </div>
+        </a>
+      </article>
       </div>
     </div>
   </section>
-  <section id="approach" class="wrap approach" aria-labelledby="approach-title">
-    <div><p class="kicker rule">02 <span>Approach</span></p><h2 id="approach-title">Behind the experience</h2></div>
-    <p><strong>Startzie began with a problem I knew firsthand:</strong> managing everything I needed to do while keeping sight of what mattered. As I used the app, I noticed where the interface interrupted my flow: recurring tasks crowding a Category, task details pulling me away from what I was doing, and information competing for attention. Those observations shaped my design decisions and reinforced a principle I carry into my work: understand how the pieces fit together, make what matters easy to find, and let the experience feel natural.</p>
-  </section>
 </main>
-<footer class="wrap sitefoot"><span>Stephanie OCampo <span class="dim">/ Product Designer</span></span><a href="./">Back to top <span aria-hidden="true">↑</span></a></footer>
+<footer class="wrap sitefoot"><span>Stephanie OCampo <span class="dim">/ Product Designer</span></span><a href="#main">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
