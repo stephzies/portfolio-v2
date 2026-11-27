@@ -39,3 +39,16 @@
   .portrait-unit{width:min(100%,19rem)}
   .hero-philosophy{max-width:29ch;font-size:clamp(1.1rem,1.7vw,1.375rem)}
 }
+
+/* Match the selected-work cards without changing the portrait crop or click target. */
+.portrait-about-link:focus-visible .portrait-frame{border-color:var(--pink);box-shadow:0 .85rem 1.8rem #18101b1c}
+@media(hover:hover) and (pointer:fine){
+  .portrait-about-link:hover .portrait-frame{border-color:var(--pink);box-shadow:0 .85rem 1.8rem #18101b1c}
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .portrait-about-link .portrait-frame{transition:transform 200ms ease,border-color 200ms ease,box-shadow 200ms ease}
+  .portrait-about-link .portrait-frame img,.portrait-about-label span{transition:transform 200ms ease}
+  .portrait-about-link:hover .portrait-frame{transform:translateY(-5px)}
+  .portrait-about-link:hover .portrait-frame img{transform:scale(1.045)}
+  .portrait-about-link:hover .portrait-about-label span{transform:translateX(3px)}
+}
