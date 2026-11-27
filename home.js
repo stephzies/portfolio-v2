@@ -19,3 +19,11 @@
   restoreSelection();
   window.addEventListener('pageshow', restoreSelection);
 })();
+
+(() => {
+  const followOldAboutLink = () => {
+    if (location.hash === '#approach') location.replace(new URL('about/', document.baseURI));
+  };
+  followOldAboutLink();
+  window.addEventListener('hashchange', followOldAboutLink);
+})();

@@ -6,3 +6,10 @@
 @media(max-width:900px){.editorial-hero{grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);gap:2rem}}
 @media(max-width:760px){.editorial-hero{grid-template-columns:minmax(0,1fr);gap:1.9rem}.editorial-hero h1{text-wrap:initial;max-width:13ch}.hero-aside{justify-self:center;gap:1rem;width:min(100%,22.5rem);padding-inline:.45rem}.portrait-unit{width:min(100%,16.5rem)}}
 @media(max-width:430px){.editorial-hero h1{font-size:clamp(2.6rem,11.1vw,3.2rem)}.masthead nav{gap:.55rem}.masthead nav a{font-size:.75rem}.masthead .brand strong{font-size:.76rem}.masthead .brand small{font-size:.71rem}.portrait-unit{width:min(100%,13.5rem)}}
+
+.portrait-about-link{display:grid;justify-items:center;text-decoration:none;gap:.2rem}
+.portrait-about-link .portrait-frame{width:100%}
+.portrait-about-link:focus-visible{border-radius:1.25rem}
+.portrait-about-label{display:inline-flex;align-items:center;gap:.35rem;min-height:2.75rem;color:var(--pink);font-weight:700;font-size:.88rem;text-underline-offset:.23em}
+.portrait-about-link:is(:hover,:focus-visible) .portrait-about-label{text-decoration:underline}
+.portrait-about-link:is(:hover,:focus-visible) .portrait-frame{border-color:var(--pink)}
