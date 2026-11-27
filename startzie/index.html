@@ -34,6 +34,16 @@
 @media(min-width:880px){#structure .views{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media print{#structure .views{grid-template-columns:repeat(3,minmax(0,1fr))}#structure .view{break-inside:avoid}}
 </style>
+<style>
+.s06-movement-evidence{display:grid;gap:1.2rem;margin:1.65rem 0 2rem}
+.s06-movement-evidence .study-figure{margin:0;min-width:0}
+.s06-movement-evidence figcaption{margin:0 0 .5rem;color:var(--muted);font-size:.9rem;line-height:1.5}
+.s06-movement-evidence figcaption strong{display:block;color:var(--ink);font-size:.96rem}
+.s06-movement-evidence a{display:block;color:var(--pink);text-underline-offset:.2em}
+.s06-movement-evidence img{height:auto}
+.s06-enlarge{display:inline-flex;align-items:center;gap:.35rem;min-height:2.75rem;font-size:.84rem;font-weight:700}
+@media print{.s06-movement-evidence figure{break-inside:avoid}.s06-enlarge{display:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -191,6 +201,29 @@ Design illustration: Categories group a recurring commitment; Planning shows eac
 <p>Moving tasks through a menu worked, but felt indirect when I was adjusting my plan. I also discovered that an interaction could support dragging without making it especially easy to grab and reposition a task.</p>
 <p><strong>What I changed</strong></p>
 <p>I introduced a shared drag-and-drop interaction across task cards and planning areas while keeping the Move menu available as another way to move tasks. I then refined task-card controls and drop behavior, and expanded the draggable area so I could grab the card itself instead of aiming for a small handle.</p>
+<div class="s06-movement-evidence" role="group" aria-label="Historical task-movement screenshots">
+<figure class="study-figure">
+<figcaption><strong>Drag handles and Move to…</strong> Small dotted handles appear on the task cards while the selected task still offers a Move to… button.</figcaption>
+<a href="assets/task-movement-grips-and-menu.png">
+<img src="assets/task-movement-grips-and-menu.png" width="1839" height="895" loading="lazy" decoding="async" alt="Start Here dashboard showing dotted drag handles on Today’s task cards and a Move to button in the selected task’s detail panel.">
+<span class="s06-enlarge">View full-size screenshot <span aria-hidden="true">↗</span></span>
+</a>
+</figure>
+<figure class="study-figure">
+<figcaption><strong>A drop target for time blocks</strong> The Time blocks area tells the user where to drop a task to schedule it.</figcaption>
+<a href="assets/task-movement-time-block-drop.png">
+<img src="assets/task-movement-time-block-drop.png" width="1514" height="697" loading="lazy" decoding="async" alt="Time blocks area with the instruction to drag a task here to schedule a new time block for today.">
+<span class="s06-enlarge">View full-size screenshot <span aria-hidden="true">↗</span></span>
+</a>
+</figure>
+<figure class="study-figure">
+<figcaption><strong>Task cards after the refinement</strong> This later dashboard capture shows the card layout after the drag surface expanded. A still image does not show where dragging can start.</figcaption>
+<a href="assets/task-movement-later-cards.png">
+<img src="assets/task-movement-later-cards.png" width="1845" height="919" loading="lazy" decoding="async" alt="Later Startzie dashboard with simplified task cards in the Anytime list.">
+<span class="s06-enlarge">View full-size screenshot <span aria-hidden="true">↗</span></span>
+</a>
+</figure>
+</div>
 <p><strong>Why it mattered</strong></p>
 <p>Moving a task became a more direct part of planning. Refining where I could grab the card made the interaction easier to use, while the menu still offered an alternative when dragging wasn't practical.</p>
 <h3 id="what-these-iterations-taught-me">What these iterations taught me</h3>
