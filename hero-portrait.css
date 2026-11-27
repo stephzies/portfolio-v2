@@ -13,3 +13,8 @@
 .portrait-about-label{display:inline-flex;align-items:center;gap:.35rem;min-height:2.75rem;color:var(--pink);font-weight:700;font-size:.88rem;text-underline-offset:.23em}
 .portrait-about-link:is(:hover,:focus-visible) .portrait-about-label{text-decoration:underline}
 .portrait-about-link:is(:hover,:focus-visible) .portrait-frame{border-color:var(--pink)}
+
+.hero-byline{display:grid;gap:.4rem;margin-bottom:1.35rem}
+.hero-name{color:var(--pink);font:700 clamp(1.85rem,1.3rem + 1.8vw,2.8rem)/1.1 var(--display);letter-spacing:-.055em}
+@media(max-width:430px){.hero-byline{margin-bottom:1.1rem}}
+.hero-philosophy{text-wrap:balance}
