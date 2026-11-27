@@ -47,8 +47,19 @@
 }
 @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
   .portrait-about-link .portrait-frame{transition:transform 200ms ease,border-color 200ms ease,box-shadow 200ms ease}
-  .portrait-about-link .portrait-frame img,.portrait-about-label span{transition:transform 200ms ease}
+  .portrait-about-link .portrait-frame img{transition:transform 200ms ease}
   .portrait-about-link:hover .portrait-frame{transform:translateY(-5px)}
   .portrait-about-link:hover .portrait-frame img{transform:scale(1.045)}
-  .portrait-about-link:hover .portrait-about-label span{transform:translateX(3px)}
+}
+
+/* Directional cues stay inside the original link targets. */
+.hero-direction-arrow{display:block;flex:none;transform-origin:center}
+.portrait-about-link:focus-visible .hero-direction-arrow{transform:translateY(-2px) rotate(-90deg)}
+.hero-work-link:focus-visible .hero-direction-arrow{transform:translateY(2px) rotate(90deg)}
+@media(hover:hover) and (pointer:fine){
+  .portrait-about-link:hover .hero-direction-arrow{transform:translateY(-2px) rotate(-90deg)}
+  .hero-work-link:hover .hero-direction-arrow{transform:translateY(2px) rotate(90deg)}
+}
+@media(prefers-reduced-motion:no-preference){
+  .hero-direction-arrow{transition:transform 280ms cubic-bezier(.25,.85,.32,1.32)}
 }
