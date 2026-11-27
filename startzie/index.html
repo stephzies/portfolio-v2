@@ -25,6 +25,15 @@
 .s02-enlarge{display:inline-flex;align-items:center;gap:.35rem;min-height:2.75rem;font-size:.84rem;font-weight:700}
 @media print{.s02-bookmarks figure{break-inside:avoid}.s02-enlarge{display:none}}
 </style>
+<style>
+#structure .views{display:grid;grid-template-columns:minmax(0,1fr);gap:.75rem;list-style:none;padding:0;margin:1rem 0 1.25rem}
+#structure .view{min-width:0;margin:0;padding:clamp(.85rem,1.5vw,1.1rem);background:var(--lavender);border-top:3px solid #b995b7;border-radius:.2rem}
+#structure .view-index{display:block;color:var(--pink);font-size:.75rem;font-weight:800;letter-spacing:.05em;margin-bottom:.4rem}
+#structure .view p{margin:0;color:var(--muted);font-size:.9375rem;line-height:1.52}
+#structure .view strong{display:block;color:var(--ink);font:700 1.1rem/1.22 Georgia,serif;margin-bottom:.35rem}
+@media(min-width:880px){#structure .views{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media print{#structure .views{grid-template-columns:repeat(3,minmax(0,1fr))}#structure .view{break-inside:avoid}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -143,9 +152,11 @@ Grouping resources wasn't the same as understanding how they supported the work 
 </div>
 <p>These refinements made the information easier to scan, but they also revealed a bigger issue: the problem wasn't only visual density. Different kinds of work needed different spaces.</p>
 <h3 id="different-views-different-purposes">Different views, different purposes</h3>
-<p><strong>Today / Overview: Get oriented.</strong> See what needs attention now and what is coming up.</p>
-<p><strong>Plan: Make decisions.</strong> Organize, schedule, and rearrange work.</p>
-<p><strong>Categories: Understand the bigger picture.</strong> Understand ongoing commitments, projects, ideas, and next steps in an area of life or work.</p>
+<ol class="views" role="list" aria-labelledby="different-views-different-purposes">
+<li class="view"><span class="view-index" aria-hidden="true">01</span><p><strong>Today / Overview: Get oriented.</strong> See what needs attention now and what is coming up.</p></li>
+<li class="view"><span class="view-index" aria-hidden="true">02</span><p><strong>Plan: Make decisions.</strong> Organize, schedule, and rearrange work.</p></li>
+<li class="view"><span class="view-index" aria-hidden="true">03</span><p><strong>Categories: Understand the bigger picture.</strong> Understand ongoing commitments, projects, ideas, and next steps in an area of life or work.</p></li>
+</ol>
 <p>When working on an individual task, Current Focus keeps the task and supporting context within reach.</p>
 <h3 id="the-tradeoff">The Tradeoff</h3>
 <p>Separating these responsibilities introduced more navigation, but reduced how much information competed for attention at once. The goal wasn't to hide information. It was to <strong>show the right level of detail for the job each view needed to do.</strong></p>
