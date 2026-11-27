@@ -5,6 +5,16 @@
 <title>Startzie Case Study | Stephanie OCampo</title>
 <meta name="description" content="A product design case study by Stephanie OCampo about organizing work and moving from context to action in a personal planning app.">
 <meta name="theme-color" content="#faf9f6"><link rel="icon" href="data:,"><link rel="stylesheet" href="../styles.css">
+<style>
+.s05-comparison{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin:1.5rem 0}
+.s05-comparison .study-figure{margin:0;min-width:0}
+.s05-comparison figcaption{margin:0 0 .45rem;color:var(--ink);font-weight:750}
+.s05-comparison a{display:block;color:var(--pink);text-underline-offset:.2em}
+.s05-comparison img{height:auto}
+.s05-enlarge{display:inline-flex;align-items:center;gap:.35rem;min-height:2.75rem;font-size:.84rem;font-weight:700}
+@media(min-width:925px){.s05-comparison{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{.s05-enlarge{display:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -81,6 +91,22 @@ Grouping resources wasn't the same as understanding how they supported the work 
 <p>An early version of Startzie brought planning, capture, notes, and broader project context into the same dashboard. It gave me access to many useful elements at once, but the experience felt crowded. Too many activities were competing for attention.</p>
 <p>Before separating the product into clearer views, I explored ways to reduce that overwhelm within the dashboard itself. I introduced <strong>collapsed sections</strong> to hide secondary details, <strong>stronger color contrast</strong> to establish visual hierarchy, and <strong>tabs at the top</strong> to divide the experience into more manageable modes.</p>
 <p>I also moved Categories out of the main Overview cards and into the sidebar. This made them accessible from any view while freeing up space for daily priorities.</p>
+<div class="s05-comparison">
+<figure class="study-figure">
+<figcaption>Before: Crowded dashboard</figcaption>
+<a href="assets/crowded-dashboard-before.png">
+<img src="assets/crowded-dashboard-before.png" width="1878" height="947" loading="lazy" decoding="async" alt="Early Startzie dashboard with a category sidebar, top tabs, a quick-capture field, and plan, notes, and goals competing for space.">
+<span class="s05-enlarge">View full-size screenshot <span aria-hidden="true">↗</span></span>
+</a>
+</figure>
+<figure class="study-figure">
+<figcaption>After: Refined Today / Overview</figcaption>
+<a href="assets/refined-overview-after.png">
+<img src="assets/refined-overview-after.png" width="1849" height="916" loading="lazy" decoding="async" alt="Refined Startzie Overview with sidebar navigation and a prominent Today panel beside Current Focus, with Inbox and Upcoming below.">
+<span class="s05-enlarge">View full-size screenshot <span aria-hidden="true">↗</span></span>
+</a>
+</figure>
+</div>
 <p>These refinements made the information easier to scan, but they also revealed a bigger issue: the problem wasn't only visual density. Different kinds of work needed different spaces.</p>
 <h3 id="different-views-different-purposes">Different views, different purposes</h3>
 <p><strong>Today / Overview: Get oriented.</strong> See what needs attention now and what is coming up.</p>
